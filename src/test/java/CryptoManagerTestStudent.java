@@ -98,7 +98,7 @@ public class CryptoManagerTestStudent extends TestCase {
 		// 1. Check if encryption returns a valid string in bounds
 		String encrypted = CryptoManager.playfairEncryption(plainText, playfairKey);
 		assertTrue("Playfair encrypted text should be in bounds", CryptoManager.isStringInBounds(encrypted));
-		System.out.println(encrypted);
+//		System.out.println(encrypted);
 
 		// 2. Check that invalid input returns the error message
 		String invalidResult = CryptoManager.playfairEncryption(invalidText, playfairKey);
